@@ -16,7 +16,7 @@ Unexpected input will prompt an alert and will ask for a valid input.
 The application will also include a "Copy" button that will copy the password to clipboard.
 
 ## Screenshot of Application
-![ScreenShot]/assets/screenshot.png
+!/assets/screenshot.png
 
 ## Link to Application
 https://jihojk.github.io/password-generator/.
