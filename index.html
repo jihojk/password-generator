@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/191a80e67d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> Password Generator </h1>
+        </header>
+        
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="copy"> 
+                    <i class="far fa-clipboard"></i>
+            </button>
+          
+        </div>
+        <button class="btn btn-large" id="generate">Generate Password </button>
+        
+        <div class="options">
+            <label>Password Length (8-128 Characters) </label>
+            <input type="number" id="length" min="8" max="128" value="10" />
+        </div>
+        <div class="options">
+            <label>Include uppercase</label>
+            <input type="checkbox" id="uppercase" unchecked />
+        </div>
+        <div class="options">
+            <label>Include lowercase </label>
+            <input type="checkbox" id="lowercase" unchecked />
+        </div>
+        <div class="options">
+            <label>Include numbers </label>
+            <input type="checkbox" id="numbers" unchecked />
+        </div>
+        <div class="options">
+            <label>Include special characters </label>
+            <input type="checkbox" id="special" unchecked />
+        </div>
+    </div>
+</body>
+
+</html>
