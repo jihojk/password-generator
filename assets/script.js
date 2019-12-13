@@ -1,13 +1,20 @@
 function pwGenerator(){
 
-var resultEl = document.getElementById('result');
-var lengthEl = document.getElementById('length');
-var upperCheck = document.getElementById('uppercase');
-var lowerCheck = document.getElementById('lowercase');
-var numberCheck = document.getElementById('numbers');
-var specialCheck = document.getElementById('special');
-var generateEl = document.getElementById('generate');
-var copyEl = document.getElementById('copy');
+// var resultEl = document.getElementById('result');
+// var lengthEl = document.getElementById('length');
+// var upperCheck = document.getElementById('uppercase');
+// var lowerCheck = document.getElementById('lowercase');
+// var numberCheck = document.getElementById('numbers');
+// var specialCheck = document.getElementById('special');
+// var generateEl = document.getElementById('generate');
+// var copyEl = document.getElementById('copy');
+
+var randomLower= String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+var randomUpper=String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+var randomNumber= +String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+var randomSpecial= " ~`-_!@#$%^&*()[]{}<>,.?' ";
+
+console.log(randomSpecial);
 
 var randomFunc = {
     lower: randomLower,
@@ -72,7 +79,8 @@ function generatePassword(lower, upper, number, special,length) {
 
 
 function randomLower() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+    var randomLower=String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+    return randomLower;
 }
 
 function randomUpper() {
